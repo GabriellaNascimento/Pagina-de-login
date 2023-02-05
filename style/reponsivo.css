@@ -1,0 +1,44 @@
+@media screen and (max-width: 880px){
+    header{
+        flex-direction: column;
+    }
+    li a{
+        margin-right: 10px;
+    }
+    article{
+        display: none;
+    }
+    aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px){
+    header{
+        flex-direction: column;
+    }
+    ul{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        margin-top: 10px;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+    }
+    #conteudo h1{
+        font-size: 2.5em;
+    }
+    #input{
+        width: 100%;
+    }
+}
