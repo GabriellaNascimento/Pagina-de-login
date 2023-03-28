@@ -4,116 +4,119 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
-:root{
-    --var1: #4e3f91;
-    --var2: #3a3a8d;
-    --var3: #decdf8;
-}
-
-body{
-    background-image: linear-gradient(45deg, var(--var1), var(--var2));
-    color: #fff;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 
 header{
+    text-align: center;
+}
+
+header li{
+    list-style-type: none;
+}
+
+main{
+    max-width: 280px;
+    margin: auto;
+}
+
+aside{
+    display: none;
+}
+
+/* Mobile First */
+
+/* html, body{
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+header{
+    background-color: brown;
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+    height: 130px;
 }
 
 header #titulo{
-    flex-direction: column;
     line-height: 10px;
     font-family: 'Fredoka One', cursive;
 }
 
-header ul li{
+header li{
     display: inline-block;
+    padding-left: 20px;
+    font-size: 1.2em;
 }
 
 header a{
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.39);
-}
-
-header li a{
     color: #fff;
-    display: inline-block;
-    margin-right: 30px;
-    font-weight: bolder;
-    transition-duration: 0.5s;
-}
-
-header li a:hover{
-    color: var(--var3);
-}
-
-header #menuespecial{
-    border: 1px solid #fff;
-    padding: 15px;
-    border-radius: 10px;
-}
-
-header #menuespecial:hover{
-    color: var(--var1);
-    background-color: #fff;
+    width: 100%;
 }
 
 main{
+    background-color: blueviolet;
+    width: 100%;
+    height: calc(100% - 180px);
+    padding-top: 50px;
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    text-align: justify;
+    justify-content: space-around;
 }
 
-section h1{
+main > section{
+    background-color: blue;
+    width: 50%;
+    padding: 0px 80px;
+}
+
+main #conteudo{
+    background-color: aquamarine;
+}
+
+main #conteudo h1{
+    margin: 0px;
+    padding: 20px 30px;
     font-size: 56px;
     line-height: 10px;
     font-family: 'Passion One', cursive;
     font-weight: 100;
 }
 
-section #destaque{
-    color: rgba(8, 8, 8, 0.527);
-    font-size: 65px;
+main #conteudo p{
+    text-align: justify;
+    padding: 0px 15px;
 }
 
-section p{
-    margin-right: 10px;
+main form{
+    background-color: antiquewhite;
+
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    min-width: 300px;
+main #imagem{
+    background-color: aqua;
+    width: 50%;
+    position: relative;
 }
 
-form input{
-    padding: 15px;
-    margin: 10px 0px;
-
-    border: 0px solid transparent;
-    border-radius: 20px;
-}
-input:focus{
-    background-color: var(--var3);
-}
-input[type=submit]{
-    max-width: 150px;
-    background-color: var(--var3);
+main #imagem > div{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
 }
 
-input[type=submit]:hover{
-    cursor: pointer;
-}
-
-article{
+main #imagem p{
     text-align: center;
-}
+} */
