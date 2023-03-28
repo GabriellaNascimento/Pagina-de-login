@@ -27,22 +27,22 @@ header{
     border-bottom: 1px solid rgba(0, 0, 0, 0.089);
 }
 
-#titulo{
+header #titulo{
     flex-direction: column;
     line-height: 10px;
     font-family: 'Fredoka One', cursive;
 }
 
-ul li{
+header ul li{
     display: inline-block;
 }
 
-a{
+header a{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.39);
 }
 
-li a{
+header li a{
     color: #fff;
     display: inline-block;
     margin-right: 30px;
@@ -50,17 +50,17 @@ li a{
     transition-duration: 0.5s;
 }
 
-li a:hover{
+header li a:hover{
     color: var(--var3);
 }
 
-#menuespecial{
+header #menuespecial{
     border: 1px solid #fff;
     padding: 15px;
     border-radius: 10px;
 }
 
-#menuespecial:hover{
+header #menuespecial:hover{
     color: var(--var1);
     background-color: #fff;
 }
@@ -72,30 +72,30 @@ main{
     text-align: justify;
 }
 
-aside div h1{
+section h1{
     font-size: 56px;
     line-height: 10px;
     font-family: 'Passion One', cursive;
     font-weight: 100;
 }
 
-#destaque{
+section #destaque{
     color: rgba(8, 8, 8, 0.527);
     font-size: 65px;
 }
 
-aside div p{
+section p{
     margin-right: 10px;
 }
 
-aside div#input{
+form{
     display: flex;
     flex-direction: column;
     max-width: 400px;
     min-width: 300px;
 }
 
-div input{
+form input{
     padding: 15px;
     margin: 10px 0px;
 
@@ -105,12 +105,12 @@ div input{
 input:focus{
     background-color: var(--var3);
 }
-#campoespecial{
+input[type=submit]{
     max-width: 150px;
     background-color: var(--var3);
 }
 
-#campoespecial:hover{
+input[type=submit]:hover{
     cursor: pointer;
 }
 

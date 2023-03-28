@@ -26,19 +26,21 @@
         </nav>
     </header>
     <main>
-        <aside>
+        <section>
             <div id="conteudo">
                 <h1 id="destaque">Inscreva-se agora</h1>
                 <h1>na Newslatter</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloremque ipsa provident veniam esse fuga doloribus laboriosam minima vel enim illum explicabo reprehenderit dolores eaque aliquam? Quas earum eveniet quod.</p>
             </div>
 
-            <div id="input">
-                <input type="text" name="nome" id="nome" placeholder="Nome">
-                <input type="email" name="email" id="email" placeholder="E-mail">
-                <input type="submit" value="Enviar >" id="campoespecial">
-            </div>
-        </aside>
+            <form id="formulario" autocomplete="on">
+                <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="name">
+
+                <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email">
+
+                <input type="submit" value="Enviar >">
+            </form>
+        </section>
         <article>
             <img src="imagens/img-marketing.png" alt="Ilustração Marketing">
             <p><a href="https://storyset.com/business" target="_blank">Business illustrations by Storyset</a></p>
