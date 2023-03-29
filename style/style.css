@@ -111,7 +111,7 @@ main .campo{
 }
 
 main .input-campo{
-    width: calc(100% - 40px);
+    width: calc(100% - 42px);
     height: 40px;
     transform: translateY(-7px);
     border: none;
@@ -153,95 +153,3 @@ main form a:hover{
 main aside{
     display: none;
 }
-
-/* Mobile First */
-
-/* html, body{
-    margin: 0px;
-    padding: 0px;
-    color: #fff;
-    box-sizing: border-box;
-    width: 100vw;
-    height: 100vh;
-    
-}
-
-header{
-    background-color: brown;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 130px;
-}
-
-header #titulo{
-    line-height: 10px;
-    font-family: 'Fredoka One', cursive;
-}
-
-header li{
-    display: inline-block;
-    padding-left: 20px;
-    font-size: 1.2em;
-}
-
-header a{
-    text-decoration: none;
-    color: #fff;
-    width: 100%;
-}
-
-main{
-    background-color: blueviolet;
-    width: 100%;
-    height: calc(100% - 180px);
-    padding-top: 50px;
-    display: flex;
-    justify-content: space-around;
-}
-
-main > section{
-    background-color: blue;
-    width: 50%;
-    padding: 0px 80px;
-}
-
-main #conteudo{
-    background-color: aquamarine;
-}
-
-main #conteudo h1{
-    margin: 0px;
-    padding: 20px 30px;
-    font-size: 56px;
-    line-height: 10px;
-    font-family: 'Passion One', cursive;
-    font-weight: 100;
-}
-
-main #conteudo p{
-    text-align: justify;
-    padding: 0px 15px;
-}
-
-main form{
-    background-color: antiquewhite;
-
-}
-
-main #imagem{
-    background-color: aqua;
-    width: 50%;
-    position: relative;
-}
-
-main #imagem > div{
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-}
-
-main #imagem p{
-    text-align: center;
-} */
