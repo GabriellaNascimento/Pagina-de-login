@@ -17,7 +17,7 @@ html, body{
     padding: 0px;
     box-sizing: border-box;
     width: 100vw;
-    height: 100vh;
+    background-color: var(--cor1);
 }
 
 header{
@@ -62,7 +62,6 @@ header a:hover{
 main{
     margin: auto;
     background-color: var(--cor1);
-    height: 100vh;
     margin-top: -17px;
     padding-top: 20px;
 }
@@ -142,6 +141,7 @@ main form a{
     display: block;
     text-align: center;
     text-decoration: none;
+    color: black;
 }
 
 main form a:hover{
