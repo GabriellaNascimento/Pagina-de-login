@@ -7,6 +7,8 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reponsivo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <header>
@@ -17,32 +19,45 @@
 
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Serviços</a></li>
                 <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#" id="menuespecial">Já tem uma conta?</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#" id="menuespecial">Não tenho conta</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
             <div id="conteudo">
-                <h1 id="destaque">Inscreva-se agora</h1>
-                <h1>na Newslatter</h1>
+                <h1 id="destaque">Acesse agora</h1>
+                <h1>a Newslatter</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, doloremque ipsa provident veniam esse fuga doloribus laboriosam minima vel enim illum explicabo reprehenderit dolores eaque aliquam? Quas earum eveniet quod.</p>
             </div>
 
             <form id="formulario" autocomplete="on">
-                <div>
-                    <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="name">
+                <div class="campo">
+                    <label for="inome"><span class="material-icons">person</span></label>
+                
+                    <input type="text" name="nome" id="inome" placeholder="Seu nome" autocomplete="name" class="input-campo">
                 </div>
 
-                <div>
-                    <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="email">
+                <div class="campo">
+                    <label for="iemail"><span class="material-icons">mail</span></label>
+                
+                    <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" class="input-campo">
                 </div>
 
-                <input type="submit" value="Enviar >">
+                <div class="campo">
+                    <label for="isenha"><span class="material-icons">key</span></label>
+                
+                    <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" maxlength="12" minlength="6" class="input-campo">
+                </div>
+
+                <div id="lembrar">
+                    <input type="checkbox" name="lembrar" id="ilembrar"> <label for="ilembrar">Lembrar de mim</label>
+                </div>
+
+                <input type="submit" value="Enviar">
+                <a href="#">Esqueci a senha</a>
             </form>
         </section>
         <aside id="imagem">

@@ -1,8 +1,16 @@
 @charset "UTF-8";
 
+/* Mobile First */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root{
+    --cor1: #4e3f91;
+    --cor2: #3a3a8d;
+    --cor3: #decdf8;
+}
 
 html, body{
     margin: 0px;
@@ -10,22 +18,138 @@ html, body{
     box-sizing: border-box;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 header{
     text-align: center;
+    background-color: var(--cor1);
+}
+
+header h1{
+    display: inline-block;
+    padding: 0px 3px;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 100;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.377);
+}
+
+header ul{
+    padding: 0px;
+    margin-top: 0px;
 }
 
 header li{
-    list-style-type: none;
+    list-style-type: none; 
+}
+
+header a{
+    display: block;
+    padding: 5px 0px;
+    margin-bottom: 1px;
+    font-size: 1.1em;
+    background-color: var(--cor2);
+    text-decoration: none;
+    color: #fff;
+}
+
+header a:hover{
+    background-color: var(--cor3);
+    color: black;
+    text-decoration: underline;
 }
 
 main{
-    max-width: 280px;
     margin: auto;
+    background-color: var(--cor1);
+    height: 100vh;
+    margin-top: -17px;
+    padding-top: 20px;
 }
 
-aside{
+main section{
+    max-width: 280px;
+    background-color: #fff;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.404);
+}
+
+main h1{
+    font-size: 2em;
+    margin: 7px 0px;
+    color: var(--cor2);
+    font-family: 'Passion One', cursive;
+    font-weight: 100;
+}
+
+main #destaque{
+    margin-top: 0px;
+}
+
+main p{
+    text-align: justify;
+}
+
+main .material-icons{
+    color: #fff;
+    font-size: 2em;
+    width: 32px;
+    height: 40px;
+}
+
+main .campo{
+    height: 40px;
+    background-color: var(--cor2);
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0px;
+    border: 1px solid var(--cor2);
+}
+
+main .input-campo{
+    width: calc(100% - 40px);
+    height: 40px;
+    transform: translateY(-7px);
+    border: none;
+    padding-left: 2px;
+    background-color: var(--cor3);
+}
+
+main #lembrar{
+    text-align: center;
+}
+
+main input[type=submit]{
+    height: 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--cor2);
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+main input[type=submit]:hover{
+    background-color: var(--cor2);
+    border-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+main form a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+main form a:hover{
+    text-decoration: underline;
+}
+
+main aside{
     display: none;
 }
 
