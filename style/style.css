@@ -18,6 +18,7 @@ html, body{
     box-sizing: border-box;
     width: 100vw;
     background-color: var(--cor1);
+    overflow-x: hidden;
 }
 
 header{
@@ -63,6 +64,7 @@ main{
     margin: auto;
     background-color: var(--cor1);
     margin-top: -17px;
+    margin-bottom: 20px;
     padding-top: 20px;
 }
 
