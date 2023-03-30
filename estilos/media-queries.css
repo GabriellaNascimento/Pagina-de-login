@@ -36,6 +36,10 @@
     main section > form{
         width: 50%;
     }
+
+    aside{
+        display: none;
+    }
 }
 
 /* Tablet: 760px - 992px*/
