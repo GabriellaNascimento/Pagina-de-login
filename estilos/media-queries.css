@@ -7,7 +7,7 @@
 }
 
 /* Celular com a tela deitada */
-@media screen and (orientation: landscape) and (max-height: 400px) and (max-width: 900px){ 
+@media screen and (orientation: landscape) and (max-height: 400px) and (max-width: 760px){ 
     header ul{
         text-align: left;
     }
