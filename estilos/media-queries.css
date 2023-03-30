@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #4e3f91;
+    --cor2: #3a3a8d;
+    --cor3: #decdf8;
+}
+
+/* Celular com a tela deitada */
+@media screen and (orientation: landscape) and (max-height: 400px){ 
+    header ul{
+        text-align: left;
+    }
+    
+    header li{
+        display: inline-block; 
+        margin: 0px 10px;
+    }
+
+    header a{
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    main section{
+        display: flex;
+        justify-content: space-around;
+        width: 85vw;
+    }
+
+    main section > div{
+        width: 40%;
+        
+    }
+
+    main section > form{
+        width: 50%;
+    }
+}
+
+/* Tablet: 760px - 992px*/
+@media screen and (min-width: 760px) and (max-width: 992px) {
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav{ 
+        height: 31px;
+    }
+
+    header li{
+        display: inline-block; 
+        margin: 0px 10px;
+    }
+
+    header a{
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    header a:hover{
+        color: #fff;
+        text-decoration: underline;
+        background-color: var(--cor2);
+    }
+
+    header #menuespecial:hover{
+        color: black;
+        background-color: var(--cor3);
+    }
+
+    main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    main section{
+        width: 40%;
+        margin: 0px 20px;
+    }
+
+    main aside{
+        display: block;
+    }
+
+    main aside p{
+        text-align: center;
+    }
+
+    main aside a{
+        color: #ffffff80;
+        text-decoration: none;
+    }
+
+    main aside a:hover{
+        text-decoration: underline;
+    }
+}
+
+/* Desktop, TV: 992px - ... */
+@media screen and (min-width: 992px){
+    header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    header nav{ 
+        height: 31px;
+    }
+
+    header li{
+        display: inline-block; 
+        margin: 0px 10px;
+    }
+
+    header a{
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 1.4em;
+    }
+
+    header a:hover{
+        color: #fff;
+        text-decoration: underline;
+        background-color: var(--cor2);
+    }
+
+    header #menuespecial:hover{
+        color: black;
+        background-color: var(--cor3);
+    }
+
+    main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    main section{
+        width: 500px;
+        margin: 0px 20px;
+    }
+
+    main aside{
+        display: block;
+    }
+
+    main aside p{
+        text-align: center;
+    }
+
+    main aside a{
+        color: #ffffff80;
+        text-decoration: none;
+    }
+
+    main aside a:hover{
+        text-decoration: underline;
+    }
+}

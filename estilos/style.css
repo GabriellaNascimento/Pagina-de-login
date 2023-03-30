@@ -111,7 +111,7 @@ main .campo{
 }
 
 main .input-campo{
-    width: calc(100% - 42px);
+    width: calc(100% - 40px);
     height: 40px;
     transform: translateY(-7px);
     border: none;
