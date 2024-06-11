@@ -57,7 +57,7 @@ header a{
 header a:hover{
     background-color: var(--cor3);
     color: black;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 main{
@@ -95,9 +95,11 @@ main p{
 
 main .material-icons{
     color: #fff;
-    font-size: 2em;
-    width: 32px;
-    height: 40px;
+    font-size: 1.7em;
+    margin-top: 6px; 
+    margin-left: 3px;
+    width: 26px;
+    height: 28px;
 }
 
 main .campo{
@@ -106,13 +108,13 @@ main .campo{
     margin-top: 5px;
     border-radius: 5px;
     overflow: hidden;
-    padding: 0px;
+    padding: 1px;
     border: 1px solid var(--cor2);
 }
 
 main .input-campo{
-    width: calc(100% - 40px);
-    height: 40px;
+    width: calc(100% - 37px);
+    height: 43px;
     transform: translateY(-7px);
     border: none;
     padding-left: 2px;
